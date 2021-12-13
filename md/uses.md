@@ -1,7 +1,7 @@
 # Documentation of WifiScannerPro
 ## import
 ```python
->>> from WifiScanner import Scanner
+>>> from WifiScanner.scanner import Scanner
 ```
 ### WifiScanner.Scanner(username=None, password=None, urls=None, range=None)
 Base: `object`

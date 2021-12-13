@@ -1,1 +1,1 @@
-from src.TpLinkScreap import *
+from . import scanner

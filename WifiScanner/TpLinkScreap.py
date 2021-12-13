@@ -42,7 +42,6 @@ class TPLinkClient(object):
         Returns generic Router details.
         User Authentication not required, only router_url should be accessible.
 
-        >>> tp_client = TPLinkClient()
         >>> tp_client.get_router_details()
         Output
         -------

@@ -5,8 +5,7 @@ import webbrowser
 
 from bs4 import BeautifulSoup
 
-from progressBar import printProgressBar
-from TpLinkScreap import TPLinkClient
+from . import TpLinkScreap, progressBar
 
 
 class Scanner:
@@ -22,10 +21,10 @@ class Scanner:
 
     def wifi_hack(self):
         for i,url in enumerate(self.urls):
-            printProgressBar(i + 1, len(self.urls), prefix = 'Progress:', suffix = 'Complete', length = 50)
+            progressBar.printProgressBar(i + 1, len(self.urls), prefix = 'Progress:', suffix = 'Complete', length = 50)
             if len(self.username) == 1:
                 try:         
-                    router = TPLinkClient(username=self.username[0],password=self.password[0], router_url=url)
+                    router = TpLinkScreap.TPLinkClient(username=self.username[0],password=self.password[0], router_url=url)
                     usrName = router.get_wan_connection_status()['username']
                     if "_" in usrName:
                         Location = usrName.split("_")[1]
@@ -40,7 +39,7 @@ class Scanner:
                     continue
             else:
                 try:         
-                    router = TPLinkClient(username=self.username[0],password=self.password[0], router_url=url)
+                    router = TpLinkScreap.TPLinkClient(username=self.username[0],password=self.password[0], router_url=url)
                     usrName = router.get_wan_connection_status()['username']
                     if "_" in usrName:
                         Location = usrName.split("_")[1]
@@ -53,7 +52,7 @@ class Scanner:
                     exit()
                 except:
                     try:
-                        router = TPLinkClient(username=self.username[-1],password=self.password[-1], router_url=url)
+                        router = TpLinkScreap.TPLinkClient(username=self.username[-1],password=self.password[-1], router_url=url)
                         usrName = router.get_wan_connection_status()['username']
                         if "_" in usrName:
                             Location = usrName.split("_")[1]
