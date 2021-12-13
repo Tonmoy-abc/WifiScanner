@@ -27,10 +27,10 @@ Output
 * **Parameters**
 
     **urls**     – A list of ip address like([10.0.1.1, 10.0.0.2]etc)
-    **username** – A list of username. Note the list will only contain 2
-                   user name for this version
-    **password** – A list of username. Note the list will only contain 2
-                   user name for this version
+
+    **username** – A list of username. Note the list will only contain 2user name for this version
+
+    **password** – A list of username. Note the list will only contain 2user name for this version
 
 #### is_http_running()
 Return if any http server running on this host or ip
@@ -49,8 +49,8 @@ True or False # Based on running or not
 * **Parameters**
 
     **host** – An Ip address
-    **port** – By default 80(It is the default port for http). For any
-               other server give the valid port  
+
+    **port** – By default 80(It is the default port for http). For any other server give the valid port  
 
 #### scan_ip()
 Returns a list of ip address those are running http server on port 80 based on given ip range 
@@ -87,7 +87,9 @@ Output
 * **Parameters**
 
     **data** – A list of dictionary with the keys 'WifiName','URL','Password', 'Location'
+
     **dir** – The location of the file file where you want to save the file
+
     **name** – The name of the file with extension
 
 #### open_htmlfile()
@@ -107,6 +109,7 @@ Output
 * **Parameters**
 
     **dir** – The location of the file file where you want to save the file
+
     **name** – The name of the file with extension
 
 #### save_as_json()
@@ -126,7 +129,9 @@ Output
 * **Parameters**
 
     **data** – A list of dictionary with the keys 'WifiName','URL','Password', 'Location'
-    **dir** – The location of the file file where you want to save the file
+
+    **dir**  – The location of the file file where you want to save the file
+
     **name** – The name of the file with extension
 
 #### load_json()
