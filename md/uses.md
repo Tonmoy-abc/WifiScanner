@@ -1,4 +1,4 @@
-# Documentation of WifiScanner
+# Documentation of WifiScannerPro
 ## import
 ```python
 >>> from WifiScanner import Scanner
