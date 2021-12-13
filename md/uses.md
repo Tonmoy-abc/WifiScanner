@@ -81,8 +81,8 @@ Output
 
 ```
 
-* **Returns**
-    Saves the the return data of wifi_hack method as html
+* **Saves**
+    the the return data of wifi_hack method as html
 
 * **Parameters**
 
@@ -103,8 +103,8 @@ Output
 
 ```
 
-* **Returns**
-    Opens the html file in web browser
+* **Opens**
+    the html file in web browser
 
 * **Parameters**
 
@@ -123,8 +123,8 @@ Output
 
 ```
 
-* **Returns**
-    Saves the the return data of wifi_hack method as html
+* **Saves**
+    the the return data of wifi_hack method as html
 
 * **Parameters**
 
