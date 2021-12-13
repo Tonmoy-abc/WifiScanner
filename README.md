@@ -1,4 +1,4 @@
-# [WifiScanner](https://github.com/Tonmoy-abc/WifiScanner/)
+# [WifiScannerPro](https://github.com/Tonmoy-abc/WifiScanner/)
 
 ## Description
 
