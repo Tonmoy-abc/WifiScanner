@@ -9,6 +9,6 @@ WifiScanner is a advanced wifi vulnerability analysis module. It is can be used 
 ## How to install or installation
 ### Install with pip
 ```bash
-pip install WifiScanner
+pip install WifiScannerPro
 ```
 ### [Changelog](https://github.com/Tonmoy-abc/WifiScanner/blob/main/CHANGELOG.md)
