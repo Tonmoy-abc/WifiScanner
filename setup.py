@@ -18,7 +18,7 @@ classifiers = [
 ]
 
 setup(
-    name='WifiScanner',
+    name='WifiScannerPro',
     version='0.0.1',
     description='A Simple Wifi Scanner With connected Isp Routers',
     #long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
