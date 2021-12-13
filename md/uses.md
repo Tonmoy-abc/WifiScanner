@@ -88,7 +88,7 @@ Output
 
     **data** – A list of dictionary with the keys 'WifiName','URL','Password', 'Location'
 
-    **dir** – The location of the file file where you want to save the file
+    **dir**  – The location of the file file where you want to save the file
 
     **name** – The name of the file with extension
 
