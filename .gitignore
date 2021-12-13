@@ -1,0 +1,4 @@
+.vscode
+dist
+WifiScanner.egg-info
+__pycache__
