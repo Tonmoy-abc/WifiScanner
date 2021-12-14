@@ -152,7 +152,7 @@ Output
 
     **location** – The location of the json file
 
-#### load_json()
+#### get_router_name()
 Returns the data of a json file as a dict
 
 ```python
