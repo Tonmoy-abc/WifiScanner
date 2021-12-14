@@ -151,3 +151,21 @@ Output
 * **Parameters**
 
     **location** – The location of the json file
+
+#### load_json()
+Returns the data of a json file as a dict
+
+```python
+>>> scanner = Scanner() # like this
+>>> print(scanner.get_router_name(url))
+Output
+---------
+The name of the router
+```
+
+* **Returns**
+    Python str if it find the name else None
+
+* **Parameters**
+
+    **url** – The ip address of the router
