@@ -3,6 +3,7 @@ import os
 import socket
 import webbrowser
 
+import requests
 from bs4 import BeautifulSoup
 
 from . import TpLinkScreap, progressBar
@@ -18,6 +19,17 @@ class Scanner:
         self.urls = urls
         # Range will be a ip rang like ---> "10.0.0.1-10.0.0.10"
         self.range = range
+
+    @staticmethod 
+    def get_router_name(url):
+        url = 'http://'+url+'/'
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        title = soup.find('title')
+        try:
+            return title.text
+        except:
+            return None
 
     def wifi_hack(self):
         for i,url in enumerate(self.urls):
@@ -65,7 +77,7 @@ class Scanner:
                         exit()
                     except:
                         continue
-                    
+
     @staticmethod
     def is_http_running(host, port=80):
         captive_dns_addr = ""
